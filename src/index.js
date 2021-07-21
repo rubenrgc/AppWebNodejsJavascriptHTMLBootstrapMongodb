@@ -1,7 +1,7 @@
 // first require the package at the top of the file
-const helmet = require("helmet");
+//const helmet = require("helmet");
 // first require the package at the top of the file
-const cors = require("cors");
+//const cors = require("cors");
 
 const express = require("express"); // dependencia de el modulo express server
 const { ApolloServer } = require("apollo-server-express"); //conexion con el modulo server
@@ -30,9 +30,9 @@ const DB_HOST = process.env.DB_HOST;
 // Variable para el metodo express del server
 const app = express();
 // add the middleware at the top of the stack, after const app = express()
-app.use(helmet());
+//app.use(helmet());
 // add the middleware after app.use(helmet());ss
-app.use(cors());
+//app.use(cors());
 
 // Connect to the database
 db.connect(DB_HOST);
